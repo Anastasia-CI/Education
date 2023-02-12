@@ -1,0 +1,1028 @@
+@font-face {
+    src:url('../fonts/NunitoSans-Regular.ttf');
+    font-family: 'NunitoSans-Regular';
+}
+@font-face {
+    src:url('../fonts/NunitoSans-Italic.ttf');
+    font-family: 'NunitoSans-Italic';
+}
+@font-face {
+    src:url('../fonts/YesevaOne-Regular.ttf');
+    font-family: 'YesevaOne-Regular';
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'NunitoSans-Regular', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+/* HEDER и FOOTER Меню  */
+.header, .footer {
+  background-color: #131313;
+}
+.fixed-container {
+    padding: 0 20px;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+.header-title, .header-button  {
+    font-size: 11px;
+    line-height: 15px;
+    color: #E3B873;
+}
+.header-title {
+    margin-left: 72px;
+    text-transform: uppercase;
+}
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 38px;
+    padding-bottom: 21px;
+    margin-right: 50px;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+.header-menu {
+    margin-left: 23px;
+}
+.menu-item {
+    margin-left: 54px;
+}
+.menu-item:nth-child(4) {
+    position: relative;
+    left: 4px;
+}
+.menu li, .header-title2 {
+    list-style-type: none;
+    font-size: 11px;
+    line-height: 15px;
+}
+.menu-link:hover, .header-title2:hover {
+    color: #E3B873;
+}
+.header-title2 {
+    margin-left: 54px;
+    padding-bottom: 3px;
+}
+.header-title2:hover {
+    text-decoration: underline;
+}
+.button, #home-button1:hover, #home-button2:hover {
+    text-transform: uppercase;
+    font-size: 11px;
+    cursor: pointer;
+    background-color: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+    border-radius: 2px;
+    border: 1px solid #E3B873;
+}
+#header-button {
+    margin-right: 22px;
+    padding-top: 5px;
+    width: 161px;
+    height: 36px;
+}
+.button-container {
+    display: flex;
+    margin-top: -13px;
+}
+/*Главная страница*/
+.home-section {
+    background-blend-mode:multiply;
+    background-image: url('../img/home-section.png');
+    background-color: rgba(0, 0, 0, 0.698);
+    height: 707px;
+}
+.home-container {
+    margin-left: 114px;
+}
+.title, .gold {
+    font-family: 'YesevaOne-Regular';
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+.home-content {
+    font-size: 22px;
+    line-height: 35px;
+    margin-top: 22px;
+}
+.gold, #title-project, .projects-menu-item .menu-link:hover, #information-title, .pig-content, #design-title, .type-of-design:hover, #contacts {
+    color:#E3B873;
+}
+.title-container {
+    display: flex;
+    align-items: center;
+    padding-top: 195px;
+    max-width: 676px;
+    text-align: left;
+}
+.home-button-container {
+    display: flex;
+    margin-top: 26px;
+}
+#home-button1, #home-button2 {
+    width: 207px;
+    height: 51px;
+    padding-top: 2px;
+    line-height: 15px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-color: #FFFFFF;
+}
+#home-button2 {
+    margin-left: 20px;
+    padding-right: 3px;
+}
+/* Примеры готовых проектов */
+.projects {
+    background-color: #131313;
+    height: 1074px;
+}
+.projects-mobile {
+    display: none;
+}
+.projects-menu {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    padding-top: 108px;
+    padding-right: 112px;
+}
+.projects-container, .projects-dekstop {
+    display:flex;
+    justify-content: space-between;
+}
+.projects-container {   
+    padding-top: 50px;
+    margin-right: 114px;
+}   
+.projects-menu-item .menu-link {
+    margin-right: 60px;
+    font-family: 'YesevaOne-Regular';
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255, 0.3);
+}
+.projects-menu-item .menu-link:hover {
+    border-bottom: 1px #E3B873 solid;
+}
+#title-project, #design-title {
+    font-size: 27px;
+    line-height: 37px;
+}
+#title-project {
+    letter-spacing: -0.07em;
+    margin-top: -2px;
+}
+.projects-right-part {
+    margin-left: 115px;
+}
+.projects-content {
+    max-width: 442px;
+    font-size: 14px;
+    line-height: 27px;
+    padding-top: 25px;
+}
+.information-container{
+    display: flex;
+    margin-top: 48px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.information-container-items {
+    min-width: 161px;
+    margin-right: 29px;
+    margin-bottom: 33px;
+}
+#information-title {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 4px;
+}
+.information-content {
+    font-size: 13px;
+    line-height: 21px;
+}
+.navigator-container {
+    margin-top: 8px;
+}
+#vector-1 {
+    position: relative;
+    top: 2px;
+}
+#vector-2, #vector-4 {
+    position: relative;
+    top: -4px;
+}
+#vector-2 {
+    position: relative;
+    left: -10px;
+}
+#vector-3 {
+    margin-top: 44px;
+    margin-left: 13px;
+}
+#vector-4 {
+    position: relative;
+    margin-left: 12px;
+    right: -10px;
+}
+/* Описание онлайн-контроля проектов */
+.online-control * {
+    color: #363636;
+}
+#control-title, .cam-container, #cam-vector, .video-container, .control-container {
+    position:relative;
+    top: -326px;
+}
+#control-title, #repair-title, #clients-title, #form-title, #contacts {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-left: 3px;
+    color: #FFFFFF;
+}
+.cam-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 14px;
+    padding-left: 7px;
+}
+#cam-vector {
+    position: relative;
+    top: 12px;
+    margin: 0 9px;
+}
+.video-container {    
+    margin-left: 292px;
+    margin-top: 30px;
+    max-width: 817px;
+    z-index: 1;
+}
+.video-player {
+    color: rgba(0, 0, 0, 0.8);
+}
+#video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 435px;
+    max-width: 817px;
+    position: relative;
+    top: -440px;
+    z-index: 2;
+}
+#play-1 {
+    margin-top: 8px;
+    margin-right: -18px;
+}
+#play-2 {
+    position: relative;
+    right: 63px;
+    top: 1px;
+}
+.control-container {
+    margin-top: -379px;
+    margin-left: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.line {
+    border-color: #E3B873;
+    border-radius: 30px;
+    width: 55px;
+    height: 2px;
+}
+.control-content {
+    padding-top: 28px;
+    padding-left: 5px;
+    font-size: 18px;
+    line-height: 37px;
+    text-align: center;
+    max-width: 681px;
+}
+.form-container-dekstop, .form-container-mobile {
+    margin-top: 93px;
+    padding-right: 10px;
+}
+.form-container-mobile {
+    display: none;
+}
+.contacts-form-items {
+    display: flex;
+}
+#form-button, #form-button-2, #form-button-3 {
+    height: 51px;
+    width: 200px;
+    margin-right: 31px;
+    margin-top: -12px;
+    padding-top: 7px;
+    box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+    border-radius: 2px;
+}
+#name, #phone, .text {
+    padding-bottom: 6px;
+    font-size: 14px;
+    line-height: 23px;
+    color: #363636; 
+}
+#name {
+    margin-right: 16px;
+    padding-left: 3px;
+}
+#phone {
+    margin-right: 44px;
+}
+input {
+    min-width: 231px;
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid #3636364D;
+}
+.label, .label-request, .label-question {
+    font-size: 13px;
+    line-height: 21px;
+}
+.label {
+    color: #36363680;
+    position: relative;
+    bottom: 18px;
+    left: 39px;
+}
+.first-checkbox {
+    margin-top: 50px;
+    margin-left: 242px;
+}
+.text {
+    margin-left: 5px;
+}
+.label {
+    cursor: pointer;
+  }
+  .checkbox{
+    display: none;
+  }
+  .fake{
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    background: #E3B873;
+    color: #fff;
+    justify-content: center;
+  }
+  .fake::before{
+    content:"\2714";
+    opacity: 0;
+    transition: .2s;
+  }
+  .checkbox:checked + .fake::before{
+    opacity: 1;
+}
+/* Варианты работ */
+.type-of-repair {
+    margin-top: -278px;
+}
+#repair-title {
+    margin-top: 5px;
+    padding-right: 7px;
+    color: #000;
+}
+#repair-title, #clients-title {
+    color: #181818;
+}
+#hammer {
+    margin-top: 324px;
+    margin-right: 12px;
+}
+  .photo-of-types {
+    height: 421px;
+    z-index: 0;
+}
+  .types-container {
+    margin-top: -295px;
+    margin-left: 85px;
+    display: flex;
+}
+  .redecorating {
+    margin-right: 29px;
+}
+  .redec-container {
+    margin-top: -133px;
+    margin-left: 29px;
+    padding-top: 23px;
+    padding-left: 34px;
+    background-color: #fff;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+    width: 330px;
+    height: 286px;
+    position: relative;
+    z-index: 2; 
+}
+  #list-title, .form-title, #number, #clients-name {
+    text-transform: none;
+    font-size: 18px;
+}
+  #list-title {
+    color: #363636;
+    line-height: 25px;
+}
+  .items-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 7px;
+}
+.items-container li {
+    font-size: 13px;
+    line-height: 27px;
+    margin-left: 10px;
+    list-style-position:outside;
+    color:#959595;
+  }
+#price-container {
+    width: 228px;
+    height: 54px;
+    margin-top: 16px;
+    margin-left: -33px;
+    text-align: center;
+    padding-top: 15px;
+    background-color:#E3B873;
+    font-size: 18px;
+    line-height: 25px;
+    position: relative;
+    z-index: 3;
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+}
+#design-container {
+    margin-left: 31px;
+}
+.description-container {
+    margin-top: 134px;
+    padding-top: 87px;
+    display: flex;
+}
+.description {
+    margin-top: -59px;
+    margin-left: -20px;
+    margin-right: 98px;
+    padding-top: 62px;
+    padding-left: 250px;
+    padding-bottom: 54px;
+    background-image: url("../img/back-img.jpg");
+    background-size: cover;
+    height: 597px;
+}
+.description-item {
+    display: flex;
+    margin-bottom: 102px;
+    height: 42px;
+    width: 379px;
+}
+.cicle-items {
+    width: 58px;
+    height: 58px;
+    border-radius: 29px;
+    background-color:#E3B873;
+    border: 8px solid #fff;
+    position: relative;
+    right: 17px;
+    text-align: center;
+    padding-top: 8px;
+    margin-left: 8px;
+}
+#number {
+    line-height: 25px;
+    text-align: center;
+}
+.description-content {
+    color:#363636;
+    font-size: 14px;
+    line-height: 19px;
+    padding-top: 9px;
+    margin-left: -11px;
+}
+.description-item:first-child p {
+    padding-top: 9px;
+    margin-left: -11px;
+}
+.description-item:nth-child(2) p, .description-item:nth-child(3)  p {
+    padding-top: 17px;
+    margin-left: -11px;
+}
+.request-form {
+    padding-top: 27px;
+    margin-left: 107px;
+    background-color: #131313;
+    width: 506px;
+    height: 509px;
+}
+.form-title {
+    line-height: 26px;
+    text-align: center;
+}
+.form-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 50px;
+    margin-top: 32px;
+}
+.label-request {
+    color: #FFFFFF80;
+}
+#request-name, #request-phone, #email, #question-name, #question-phone, #question-item {
+    background-color: #131313;
+    padding-bottom: 7px;
+    font-size: 14px;
+    line-height: 23px;
+}
+.request-form input::placeholder, #request, .question-form input::placeholder, #question  {
+    color: #ffffff;
+}
+#request, #question {
+    display: block;
+    width: 259px;
+    text-align: left;
+    margin-top: -38px;
+    margin-left: 26px;
+    margin-bottom: 15px;
+}
+.form-item {
+    margin-bottom: 43px;
+}
+.second-checkbox {
+    display: flex;
+    margin-top: -10px;
+    margin-left: -40px;
+}
+#form-button-2 {
+    margin-left: 194px;
+    width: 213px;
+    font-size: 13px;
+    line-height: 22px;
+}
+.discound {
+    display: flex;
+    margin-top: 39px;
+    margin-left: 140px;
+}
+.pig-cicle {
+    width: 72px;
+    height: 72px;
+    border-radius: 36px;
+    background-color: #E3B873;
+    padding-top: 18px;
+    padding-left: 15px;
+}
+.pig-content {
+    font-size: 18px;
+    line-height: 26px;
+    margin-left: 24px;
+    padding-top: 10px;
+}
+/* Возможные стили интерьеров */
+.types-section {
+    margin-top: 241px;
+    background: linear-gradient(109.8deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.9) 100%), url('../img/type-of-design.png');
+    height: 864px;
+}
+#design-title {
+    margin-top: 50px;
+    margin-bottom: 37px;
+}
+.list-of-design {
+    margin-top: 84px;
+    padding-left: 80px;
+    margin-right: 6px;
+    flex: 1;
+}
+.type-of-design {
+    font-size: 20px;
+    line-height: 38px;
+    margin-bottom: 12px;
+}
+.list-of-design p:nth-child(7), .list-of-design p:nth-child(10){
+    margin-bottom: 10px;
+}
+.type-of-design:hover {
+    text-decoration: underline;
+}
+.types-of-design-container, .photo-of-design-container {
+    display: flex;
+}
+.photo-of-design-container {
+    flex-wrap: wrap;
+    flex: 2;
+}
+#photo-1 {
+    margin-left: 44px;
+    margin-top: -40px;
+    margin-bottom: 33px;
+}
+#photo-2 {
+    margin-left: 43px;
+    margin-top: -112px;
+}
+#photo-3 {
+    margin-left: 44px;
+}
+#photo-4 {
+    margin-top: -356px;
+    margin-left: 43px;
+}
+/* Отзывы клиентов */
+section.clients {
+    padding: 110px 102px 355px;
+    height: 1107px;
+    width: 100%;
+    background-image: url(../img/background_city.svg);
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+.clients-wrapper, .clients-title-container {
+    display: flex;
+    flex-direction: column;
+}
+.clients-card-container, .card-title {
+    display: flex;
+}
+#clients-title {
+    padding-right: 4px;
+}
+.hand-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 11px;
+    margin-left: 4px;
+    margin-bottom: 22px;
+}
+.clients-subtitle {
+    font-size: 18px;
+    line-height: 29px;
+    margin-left: 2px;
+    text-align: center;
+    color: #363636;
+}
+.clients-card-container {
+    margin-top: 38px;
+}
+.clients-cards-wrapper{
+    display: flex;
+    align-items: center;
+    width: 1336px;
+    margin-right: 44px;
+}
+.clients-card{
+    width: 376px;
+    height: 428px;
+    padding-top: 15px;
+    margin-right: 10px;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+}
+.card-title {
+    margin-bottom: 20px;
+    padding-top: 8px;
+}
+.card-title img{
+    border-radius: 50%;
+    margin-top: 2px;
+    margin-left: 21px;
+}
+.clients-card #clients-name {
+    line-height: 23px;
+    text-align: left;
+    padding-top: 18px;
+    margin-left: 23px;
+    color: #181818;
+}
+.feedback{
+    font-size: 13px;
+    line-height: 23px;
+    text-align: left;
+    padding-left: 21px;
+    padding-bottom: 7px;
+    color: #959595;
+}
+.clients-information {
+    display: flex;
+    height: 54px;
+    width: 294px;
+    margin-top: 37px;
+    margin-left: 1px;
+    background: #E3B873;
+    box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+}
+.golden-label-one {
+    border-right: 0.75px solid #FFFFFF;
+    width: 119px;
+    height: 54px;
+    padding-top: 10px;
+    margin-left: 17px;
+    margin-right: 16px;
+}
+.golden-label-two {
+    margin-top: 10px;
+}
+.clients-information span{
+    font-size: 17px;
+    line-height: 24px;
+    padding-left: 10px;
+    text-align: center;
+    position: relative;
+    bottom: 9px;
+}
+/* Контакты компании */
+.contacts {
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%), url('../img/contacts-back.png');
+    height: 954px;
+}
+.question-form {
+    height: 445px;
+    max-width: 883px;
+    background-color: #131313;
+    position: relative;
+    top: -222px;
+    margin-left: 289px;
+    padding-top: 32px;
+}
+#form-title, #contacts {
+margin-left: -1px;
+}
+.question-form-container .form-box {
+    align-items: center;
+    padding-right: 10px;
+}
+.form-item-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+    margin-bottom: 35px;
+}
+.name-item {
+    margin-left: -96px;
+}
+.phone-item {
+    position: relative;
+    left: 56px;
+}
+.form-item-question {
+    margin-bottom: 62px;
+    margin-left: -46px;
+}
+.label-question {
+    color: #FFFFFF80;
+    position: relative;
+    top: 5px;
+}
+#question-label {
+    top: 10px;
+}
+.question-form input::placeholder {
+    position: relative;
+    top: 2px;
+}
+#question-item {
+    width: 517px;
+    border-bottom: 1px solid #FFFFFF26;
+    padding-top: 5px;
+}
+#question-name, #question-phone {
+    border-bottom: 1px solid #FFFFFF26;
+}
+.question-checkbox {
+    margin-left: -387px;
+}
+#question {
+    margin-top: -40px;
+    margin-left: -13px;
+    margin-bottom: 29px;
+}
+.question-form #form-button-3 {
+    margin-right: 42px;
+    width: 200px;
+}
+.map-contacts-dekstop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -172px;
+}
+.map-contacts-mobile {
+    display: none;
+}
+#contacts {
+    margin-bottom: 23px;
+    color: #E3B873;
+}
+.contacts-items-container {
+    margin-bottom: 36px;
+    margin-left: -15px;
+}
+.inst-item {
+    position: relative;
+    left: 10px;
+}
+.map-container {
+    margin-left: -5px;
+    max-width: 925px;
+}
+/* Меню навигации footer */
+.footer {
+    height: 133px;
+    padding-top: 24px;
+}
+/* Адаптация для устройств с дисплеем менее 1300px  */
+@media only screen and (max-width: 1300px) {
+    .menu, header .button{
+        display: none;
+    }
+    .header-title2 {
+        margin-left: 0px;
+    }
+    .home-section, .home-button-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .home-container, .home-button-container, 
+    #home-button1, #home-button2 {
+        margin-left: 0px;
+    }
+    #home-button1 {
+        margin-bottom: 20px;
+    }
+    #home-button1, #home-button2 {
+        width: 80%;
+    }
+    /* Проекты */
+    .projects-dekstop {
+        display: none;
+    }
+    .projects-mobile {
+        display: flex;
+        align-items: center;
+        margin-top: -150px;
+    }
+    .projects-container, .projects-right-part, 
+    .form-container-mobile, .form-button-container,
+     .types-of-design-container,
+    .list-of-design, .photo-of-design-container,
+    .question-form-container, .question-form,
+    .form-box, .form-item-container, .map-contacts-mobile {
+        margin-right: 0px;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .types-container {
+        flex-wrap: wrap;
+    }
+    .projects-content, #title-project {
+        text-align: center;
+    }
+    .project-img-container {
+        text-align:center;
+        margin-left: 18px;
+        margin-right: 17px;
+        min-width: 300px;
+    }
+    #control-title, .cam-container, #cam-vector, 
+    .video-container, .control-container {
+        position:relative;
+        top: -5px;
+    }
+    .online-control .fixed-container   {
+        background-color: #131313;
+        margin-top: -50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .online-control * {
+        color: #FFFFFF;
+    }
+    .control-title-container {
+        text-align: center;
+    }
+    .form-container-dekstop, footer {
+        display: none;
+    }
+    #video, .video-container,.control-container, 
+    .form-container-mobile, .first-checkbox  {
+        margin-right: 0 px;
+        margin-left: 0px;
+    }
+    .contacts-form-items, .question-form-container {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    input, .online-control input::placeholder {
+        background-color: #131313;
+        color: #FFFFFF;
+    }
+    .online-control .label {
+        position: relative;
+        bottom: -3px;
+        left: -15px;
+        color: #FFFFFF80;
+    }
+    .online-control input {
+        width: 95%;
+        outline: 0;
+        border: 0;
+        border-bottom: 1px solid #FFFFFF;
+    }
+    #form-button, .question-form #form-button-3 {
+        margin-top: 40px;
+        width: 80vw;
+        margin-left: 10px;
+        margin-right: 0px;
+    }
+    .first-checkbox {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    /*  */
+    .type-of-repair, .types-container {
+        margin-top: 30px;
+    }
+    #hammer {
+        margin-top: 0px;
+    }
+    .redecorating {
+        margin-bottom: 50px;
+    }
+    .description-container, .type-of-design, 
+    #photo-2, #photo-3, #photo-4, .clients, .map-contacts-dekstop {
+        display: none;
+    }
+    /*  */
+    .types-section {
+        margin-top: 200px;
+        background: #131313;
+    }
+    #design-title {
+        text-align: center;
+    }
+    #photo-1 {
+        max-width: 100%;
+        margin-left: 0px;
+    }
+    .list-of-design {
+        position: relative;
+        bottom: 290px;
+        padding-left: 0px;
+    }
+    .photo-of-design-container {
+        position: relative;
+        bottom: 290px;
+    }
+    .contacts {
+        background: #131313;
+        height: auto;
+    }
+    .name-item, .phone-item, .form-item-question, 
+    .question-form-container .form-box {
+        left: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .question-form {
+        width: auto;
+        top: -370px
+    }
+    .form-item-container {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .question-form input, #question-item {
+        width: 85vw;
+    }
+    .map-contacts-mobile {
+        margin-top: -290px;
+    }
+    #contacts {
+        margin-top: 10%;
+    }
+    .map-container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
